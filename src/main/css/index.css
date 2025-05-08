@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+/* Хедер с фоном */
+header {
+    background-image: url('../images/Chip-photo.jpg'); /* замените на путь к фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* Навигационное меню */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* Контейнер карточек */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+/* Карточка */
+.card {
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card a {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #0077aa;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #444;
+}
